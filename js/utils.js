@@ -65,16 +65,7 @@ function printMat(mat, selector) {
 
 }
 
-function copyMat(mat) {
-    var newMat = [];
-    for (var i = 0; i < mat.length; i++) {
-        newMat[i] = [];
-        for (var j = 0; j < mat[0].length; j++) {
-            newMat[i][j] = mat[i][j];
-        }
-    }
-    return newMat;
-}
+
 // location is  an object that contains i and j
 
 function renderCell(i, j, value) {
@@ -83,13 +74,6 @@ function renderCell(i, j, value) {
     elCell.innerHTML = value;
 }
 
-// i and j are based on a location
-
-// function renderCell(i, j, value) {
-//     var elCell = document.querySelector(`[data-i="${i}"][data-j="${j}"]`)
-//     console.log('elCell:', elCell)
-//     elCell.innerHTML = value
-// }
 
 function countNeighbors(cellI, cellJ, mat) {
     var neighborsLocation = []
@@ -99,7 +83,7 @@ function countNeighbors(cellI, cellJ, mat) {
         for (var j = cellJ - 1; j <= cellJ + 1; j++) {
             if (i === cellI && j === cellJ) continue;
             if (j < 0 || j >= mat[i].length) continue;
-            // if (mat[i][j] === LIFE || mat[i][j] === SUPER_LIFE)
+
             console.log(`new cell i ${i} j ${j}`)
             if (mat[i][j].isMine) neighborsCount++;
 
@@ -145,7 +129,7 @@ function revealNeighbors(cellI, cellJ, mat) {
             if (i === cellI && j === cellJ) continue;
             if (j < 0 || j >= mat[i].length) continue;
             if (gBoard[i][j].isShown) continue
-            // if (mat[i][j] === LIFE || mat[i][j] === SUPER_LIFE)
+
             neighborsLocation.push({ i, j })
         }
     }
