@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body onload="init()">
+    <h1 class="header">PREPARE TO GET YOURE "MINE" BLOWN</h1>
+    <h2 class="timer"><span class="stopwatch">0.00</span></h2>
+    <div class="smiley-wrapper"></div>
+    <div class="button-wrapper">
+        <button class="level-buttons" onclick="newLevel(0)" class="levels">beginner</button>
+        <button class="level-buttons" onclick="newLevel(1)" class="levels">intermediate</button>
+        <button class="level-buttons" onclick="newLevel(2)" class="levels">hard</button>
+    </div>
+    <div>
+        <div class="wrapper"></div>
+
+    </div>
+    <div class="lives-left">♥️♥️♥️</div>
+    <p><span>YOU WIN!!!</span><span>YOU LOOSE!!!</span></p>
+    <button onclick="resetAll()" class="restart-btn">restart game</button>
+
+
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
