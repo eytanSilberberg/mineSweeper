@@ -10,28 +10,36 @@
 </head>
 
 <body onload="init()">
-    <h1 class="header">PREPARE TO GET YOURE "MINE" BLOWN</h1>
-    <h2 class="timer"><span class="stopwatch">0.00</span></h2>
-    <div onclick="init()" class="smiley-wrapper"></div>
-    <div class="button-wrapper">
-        <button class="level-buttons" onclick="newLevel(0)" class="levels">beginner</button>
-        <button class="level-buttons" onclick="newLevel(1)" class="levels">intermediate</button>
-        <button class="level-buttons" onclick="newLevel(2)" class="levels">hard</button>
-    </div>
-    <div>
-        <div class="wrapper"></div>
+    <div class="content-wrapper">
+        <p class="top-line"> I am a top border</p>
 
-    </div>
-    <div class="lives-left">♥️♥️♥️</div>
-    <p><span>YOU WIN!!!</span><span>YOU LOOSE!!!</span></p>
-    <button onclick="resetAll()" class="restart-btn">restart game</button>
-    <div class="my-name">Eytan Silberberg</div>
+        <div class="main-section">
+            <div class="content">
+                <p class="smiley-wrapper">Press<span onclick="init()" id="smiley">😀</span> to restart</p>
+                <p class="stopwatch">0.000</p>
+                <div class="levels-wrapper"><span class="levels" onclick="changeLevel(0)">beginner</span><span
+                        class="levels" onclick="changeLevel(1)">Intermediate</span><span class="levels"
+                        onclick="changeLevel(2)">Expert</span></div>
+                <div class="table-main"></div>
+                <div class="score-wrapper"></div>
+            </div>
+
+            <div class="extras">
+                <p>♥️♥️♥️</p>
+                <div class="extra-buttons">
+                    <button onclick="takeAHint()">Take a hint. You got 3 left</button>
+                </div>
+                <img src="/imgs/off.png" alt="">
+
+            </div>
+        </div>
+        <div class="footer"><span>Prepare to get your "mine" blown!</span> <span>By Eytan Silberberg</span></div>
 
 
 
 
-    <script src="js/utils.js"></script>
-    <script src="js/main.js"></script>
+        <script src="/js/util (3).js"></script>
+        <script src="/js/main.js"></script>
 </body>
 
 </html>

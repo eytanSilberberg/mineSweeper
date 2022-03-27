@@ -1,100 +1,164 @@
 body{
     margin: 0;
-    text-align: center;
-    background-color: #49c0fc;
-    font-size: 20px;
-    height: 1000px;
+height: 100vh;
+font-family: 'Courier New', Courier, monospace;
 }
-.box{
-
-    height: 500px;
-    width: 500px;
-    text-align: center;
-}
-.lives-left{
-    height: 50px;
-    font-size: 30px;
-}
-div{
-    display: flex;
-    justify-content: center;
-
-    width: 100%;
-    height: 600px;
-    text-align: center;
-}
-.left{
-    display: inline-block;
-    width: 28%;
-}
-.wrapper{
-    
-
-    text-align: center;
-    width: 50%;
-    height: 500px;
-}
-.right{
-    display: inline-block;
-    width: 20%;
-}
-table{
-    width: 10px;
-    height: 10px;
-}
-
-
-td{
-    width:40px;
-    height: 40px;
-    background-color: #8dcb3a;
-}
-td:nth-of-type(2n){
-    background-color: #a6d948;
-}
-
-h1{
-    text-align: center;
-    margin-bottom: 50px;
-}
-h2{
-    text-align: center;
-}
-.button-wrapper{
-    text-align: center;
-    height:60px;
-    margin-bottom: 30px;
-
-}
-.restart-btn{
-    font-size: 20px;
-    margin: auto;
-
-}
-
-.level-buttons{
-    font-size: 20px;
-    padding: 20px;
-    margin:0 20px 0 ;
-}
-.smiley-wrapper{
-    height: 50px;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-p{
+.top-line{
     margin: 0;
-    font-size: 30px;
+    background-color: black;
+
 }
 
-.my-name{
-    bottom: 0;
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+}
+.main-section{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+.stopwatch{
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom:20px ;
+}
+.content{
+    width: 60%;
+    background-color:rgba(38, 206, 150, 0.253);
+    display: flex;
+   flex-direction: column;
+    justify-content:start;
+    align-items: center;
+}
+.table-main{
+    background-color: #fec5bb25;
+    image-orientation:10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 190px;
-    font-size: 40px;
-    background-color: rgba(255, 228, 196, 0.52);
+    
+}
+.extras{
+    display: flex;  
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 30px;
+    width: 40%;
+    height: auto;
+    background-color: rgba(165, 241, 235, 0.609);
+}
+.extras p{
+    display: flex;
+    justify-content: center;
+    
+    font-size: 70px;
+    letter-spacing: 30px;
+    height: 80px;
+    margin: 0;
 
+}
+
+table{
+    background-image: url(/imgs/yellow.gif);
+    background-size: 600px;
+    margin-top: 10%;
+    background-repeat: no-repeat;
+    
+  
+    text-align: center;
+    width:600px;
+    height: 600px;
+}
+td{
+    border:1px solid rgb(189, 63, 63);
+    font-size: 25px;
+    height:40px ;
+    width: 40px;
+    transition: 200ms;
+}
+.levels-wrapper{
+    margin-bottom: 30px;
+    
+}
+span{
+    margin: 0 90px 0;
+    font-size: 25px;
+}
+.smiley-wrapper{
+    margin-top:10px;
+    font-size:30px;  
+}
+#smiley{
+    font-size: 50px
+}
+.extra-buttons{
+    margin-top: 30;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.extra-buttons button{
+    padding: 15px 10px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+img{
+    margin-top:5em;
+    width: 400px;
+    height:400px;
+}
+td:hover{
+    background-color: #8974b9;
+}
+
+.td-cover{
+    background-color: #fec5bb;
+}
+
+.form-wrapper button{
+    font-size: 20px;
+}
+
+
+.score-wrapper{
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.my-name{
+    font-size:70px;
+}
+div span{
+    
+    font-size:30px;
+}
+.levels{
+    border:2px solid #c53a21;
+    background-color: bisque;
+    padding: 10px 20px 10px;
+    border-radius: 30%;
 }
